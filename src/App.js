@@ -2,19 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 
-function App() {
-  // JSX寫法
-  // return (
-  //   <div className="App">
-  //       <h1>I love React.</h1>
-  //   </div>
-  // );
+import ItemDetail from './components/ItemDetail';
 
-  // 純JS寫法
-  return React.createElement(
-      'div',
-      { className: 'App' },
-      React.createElement('h1', { className: 'text-danger' }, 'I love React.')
+function App() {
+  return (
+    <div className="text-center p-4">
+      <button className="btn btn-danger">确定</button>
+      <hr />
+      <ItemDetail></ItemDetail>
+    </div>
   );
 }
 
