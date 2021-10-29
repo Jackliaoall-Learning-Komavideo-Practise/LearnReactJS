@@ -1,7 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-
 import ItemDetail from './components/ItemDetail';
 
 function App() {
@@ -10,6 +6,20 @@ function App() {
       <button className="btn btn-danger">确定</button>
       <hr />
       <ItemDetail></ItemDetail>
+      <hr />
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <ItemDetail></ItemDetail>
+          </div>
+          <div className="col">
+            <ItemDetail></ItemDetail>
+          </div>
+          <div className="col">
+            <ItemDetail></ItemDetail>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
