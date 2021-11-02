@@ -15,7 +15,12 @@ const AwsForm = (props) => {
         setRegionID(event.target.value)
     }
     const btn_click = (event) => {
-        console.log(txtAccessKeyID, txtSecretAccessKey, selectRegionID)
+        props.onSave(
+            {
+                accessKeyID: txtAccessKeyID,
+                secretAccessKey: txtSecretAccessKey,
+                regionID: selectRegionID,
+        })
     }
 
     return (

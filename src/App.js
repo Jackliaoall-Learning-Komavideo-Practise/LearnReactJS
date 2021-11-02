@@ -11,11 +11,15 @@ function App() {
         regionID: 'eu-west-2',
     }
 
+    const handlerAppDataEvent = (appdata) => {
+        console.log(appdata)
+    }
+
     return (
         <div>
             <Header></Header>
             <div className="p-4">
-                <AwsForm appdata={appData}></AwsForm>
+                <AwsForm appdata={appData} onSave={handlerAppDataEvent}></AwsForm>
             </div>
         </div>
     );
