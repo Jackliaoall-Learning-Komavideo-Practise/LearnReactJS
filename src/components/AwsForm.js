@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
 
-const AwsForm = () => {
-    const [txtAccessKeyID, setAccessKeyID] = useState('')
-    const [txtSecretAccessKey, setSecretAccessKey] = useState('')
-    const [selectRegionID, setRegionID] = useState('ap-northeast-1')
+const AwsForm = (props) => {
+    const [txtAccessKeyID, setAccessKeyID] = useState(props.appdata.accessKeyID)
+    const [txtSecretAccessKey, setSecretAccessKey] = useState(props.appdata.secretAccessKey)
+    const [selectRegionID, setRegionID] = useState(props.appdata.regionID)
 
     const txtAccessKeyID_onchange = (event) => {
         setAccessKeyID(event.target.value)
