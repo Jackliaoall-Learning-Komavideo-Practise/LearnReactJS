@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 
 const ItemDetail = () => {
     const ItemImage = "https://pokemongolive.com/img/posts/anniversaryposter2019.jpg"
-    const ItemTitle = "精灵宝可梦"
+    // const ItemTitle = "精灵宝可梦"
+    let [ItemTitle, setItemTitle] = useState("精灵宝可梦");
     const ItemContent = "Pokémon GO 三周年啦。"
     const ItemLink = "https://pokemongolive.com/post/birthday2019/?hl=zh_hant"
 
     const btn_click = (event) => {
-        console.log('btn_click', Math.random())
+        setItemTitle("可爱宝可梦")
     }
 
     return (
