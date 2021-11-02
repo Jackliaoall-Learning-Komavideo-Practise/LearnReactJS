@@ -6,14 +6,20 @@ const ItemDetail = () => {
     const ItemContent = "Pokémon GO 三周年啦。"
     const ItemLink = "https://pokemongolive.com/post/birthday2019/?hl=zh_hant"
 
+    const btn_click = (event) => {
+        console.log('btn_click', Math.random())
+    }
+
     return (
         <Fragment>
             <div className="card m-3" style={{ "width": "18rem" }}>
                 <img src={ItemImage} className="card-img-top" alt="" />
                 <div className="card-body">
-                <h5 className="card-title">{ItemTitle}</h5>
-                <p className="card-text">{ItemContent}</p>
-                <a href={ItemLink} className="btn btn-primary">走，去看看</a>
+                    <h5 className="card-title">{ItemTitle}</h5>
+                    <p className="card-text">{ItemContent}</p>
+                    <a href={ItemLink} className="btn btn-primary">走，去看看</a>
+                    <hr/>
+                    <button className="btn btn-success" onClick={btn_click}>一个按钮</button>
                 </div>
             </div>
         </Fragment>
