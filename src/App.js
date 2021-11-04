@@ -1,12 +1,12 @@
 import Header from './components/Header';
-import Todolist from './components/Todolist';
+import MyStyle from './components/MyStyle';
 
 function App() {
     return (
         <div>
             <Header></Header>
             <div className="text-center p-4">
-                <Todolist></Todolist>
+                <MyStyle></MyStyle>
             </div>
         </div>
     );
