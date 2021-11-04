@@ -1,12 +1,12 @@
 import Header from './components/Header';
-import MyStyle from './components/MyStyle';
+import AwsForm2 from './components/AwsForm2';
 
 function App() {
     return (
         <div>
             <Header></Header>
-            <div className="text-center p-4">
-                <MyStyle></MyStyle>
+            <div className="p-4">
+                <AwsForm2></AwsForm2>
             </div>
         </div>
     );
