@@ -9,10 +9,7 @@ const MyStyle = () => {
     return (
         <Fragment>
             <h1>MyStyle</h1>
-            <h1 style={{
-                color: FLG ? 'red' : 'blue',
-                backgroundColor: FLG ? 'yellow' : 'gray',
-            }}>MyStyle</h1>
+            <h1 className={FLG ? 'text-primary bg-light' : 'text-danger bg-warning'}>MyStyle</h1>            
             <hr />
             {FLG.toString()}
             <hr />
